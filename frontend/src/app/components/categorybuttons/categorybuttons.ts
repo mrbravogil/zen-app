@@ -34,7 +34,7 @@ import { CategoryService } from '../../services/category.service';
       </div>  
     </div>
   `,
-  styleUrl: './categorybuttons.css'
+  styleUrls: ['./categorybuttons.css']
 })
 export class Categorybuttons implements OnInit {
   categories: any[] = [];
