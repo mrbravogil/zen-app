@@ -1,4 +1,4 @@
-# Zen App
+# 🧘🏽‍♀️ Zen App
 
 This project is a simple Quotes API with a Spring Boot backend and an Angular frontend. It uses Supabase for the database and is deployed on Render. The project is currently running locally.
 
