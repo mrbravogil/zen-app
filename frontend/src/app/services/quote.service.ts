@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class QuoteService {
-  private apiUrl = 'http://localhost:8080/api/quotes';
+  private apiUrl = 'https://zen-app-rbj9.onrender.com/api/quotes';
 
   constructor(private http: HttpClient) { }
 

@@ -8,9 +8,9 @@ import com.example.zen_app_backend.repository.QuoteRepository;
 
 import java.util.List;
 
+@CrossOrigin(origins = "*")  // Esto permite que Angular consuma la API en desarrollo
 @RestController
 @RequestMapping("/api/quotes")
-@CrossOrigin(origins = "http://localhost:4200")  // Esto permite que Angular consuma la API en desarrollo
 public class QuoteController {
 
     @Autowired

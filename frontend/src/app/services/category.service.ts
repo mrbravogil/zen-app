@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CategoryService {
-  private apiUrl = 'http://localhost:8080/api/categories';
+  private apiUrl = 'https://zen-app-rbj9.onrender.com/api/categories';
 
   constructor(private http: HttpClient) {}
 
