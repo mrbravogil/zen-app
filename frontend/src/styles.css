@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@plugin "daisyui" {
+  themes: valentine;
+}
 
 .bg-flower {
     background-image:
@@ -22,5 +25,10 @@
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url('/assets/img/pinksunset.jpg');
+  }
+
+   .bg-purplesunset {
+    background-image: 
+    url('/assets/img/purplesunset.jpg');
   }
   

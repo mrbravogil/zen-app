@@ -1,1 +1,9 @@
-<p>quotelayout works!</p>
+<div class="flex flex-wrap items-center justify-center gap-2 pt-20 text-base-100" *ngIf="quotes.length > 0">
+    <div class="flex gap-5" *ngFor="let quote of quotes | slice:0:4; let i = index">
+        <div (click)="onQuoteSelected(quote.id)"
+             class="bg-base-200 opacity-50 w-[25vw] sm:w-[15vw] lg:w-[10vw] h-[28vh] border-2 border-secondary p-4 rounded-2xl text-md italic relative">
+          <p class="absolute top-3 left-3 pr-3 text-purple-800 font-semibold">{{ quote.text }}</p>
+        </div>
+
+      </div>  
+    </div>

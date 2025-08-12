@@ -1,1 +1,25 @@
-<p>categorybuttons works!</p>
+<div class="flex items-center justify-center gap-2 text-purple-800 font-semibold" *ngIf="categories.length >= 4">
+    <div class="flex flex-col gap-5 text-md">
+    
+    <button (click)="onCategorySelected(1)"
+              class="bg-base-200 opacity-50 w-[25vw] sm:w-[15vw] lg:w-[10vw] h-[25vh] border-2 border-secondary p-3 rounded-2xl italic hover:scale-105 hover:border-2 relative cursor-pointer">
+        <p class="absolute top-2 text-left">{{ getCategoryNameById(1) }}</p>
+      </button>
+
+      <button (click)="onCategorySelected(2)"
+              class="bg-base-200 opacity-50 w-[25vw] sm:w-[15vw] lg:w-[10vw] h-[15vh] border-2 border-secondary p-3 rounded-2xl italic hover:scale-105 hover:border-2 relative cursor-pointer">
+        <p class="absolute top-2 text-left">{{ getCategoryNameById(2) }}</p>
+      </button>
+      </div>  
+      <div class="flex flex-col gap-5">
+      <button (click)="onCategorySelected(3)"
+              class=" bg-base-200 opacity-50 w-[25vw] sm:w-[15vw] lg:w-[10vw] h-[15vh] border-2 border-secondary p-3 rounded-2xl italic hover:scale-105 hover:border-2 relative cursor-pointer">
+        <p class="absolute top-2 text-left">{{ getCategoryNameById(3) }}</p>
+      </button>
+
+      <button (click)="onCategorySelected(4)"
+              class="bg-base-200 opacity-50 w-[25vw] sm:w-[15vw] lg:w-[10vw] h-[25vh] border-2 border-secondary p-3 rounded-2xl italic hover:scale-105 hover:border-2 relative cursor-pointer">
+        <p class="absolute top-2 text-left">{{ getCategoryNameById(4) }}</p>
+      </button>
+      </div>  
+    </div>
